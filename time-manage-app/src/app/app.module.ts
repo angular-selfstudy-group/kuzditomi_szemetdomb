@@ -7,10 +7,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LofaszComponent } from './lofasz/lofasz.component';
  
 
 const appRoutes: Routes = [
   {
+    path: 'lofasz',
+    component: LofaszComponent,
+  },{
     path: 'home',
     component: HomeComponent,
   },
@@ -26,7 +30,8 @@ const appRoutes: Routes = [
     declarations: [
       AppComponent,
       HomeComponent,
-      PageNotFoundComponent
+      PageNotFoundComponent,
+      LofaszComponent
     ],
     imports: [
       BrowserModule,
