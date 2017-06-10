@@ -1,7 +1,12 @@
-a {
-	text-decoration: none;
+.toolbar-row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+}
 
-	&.active {
-		background: white;
-	}
+.app-content {
+	padding: 20px;
 }
