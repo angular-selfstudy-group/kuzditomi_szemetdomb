@@ -5,3 +5,9 @@
 md-input-container {
 	width: 100%;
 }
+
+.show-result{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}

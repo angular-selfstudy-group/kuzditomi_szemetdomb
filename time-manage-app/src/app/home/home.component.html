@@ -5,8 +5,12 @@
 	</md-input-container>
 
 	<md-autocomplete #auto="mdAutocomplete">
-		<md-option *ngFor="let show of showSearchResults | async" [value]="show">
-			{{ show }}
+		<md-option *ngFor="let show of showSearchResults | async" [value]="show.title">
+			<div class="show-result">
+				<img width="150" src="{{show.posterUrl}}"/>
+				<span class="title">{{ show.title }}</span>
+				<span class="year">{{ show.year }}</span>
+			</div>			
 		</md-option>
 	</md-autocomplete>
 </md-card>

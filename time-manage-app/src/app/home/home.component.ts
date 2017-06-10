@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Movie, MovieService } from './movie.service';
+import { Movie, Series, MovieService } from './movie.service';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/Rx';
 
@@ -11,7 +11,7 @@ import 'rxjs/Rx';
 })
 export class HomeComponent {
 	search: FormControl;
-	showSearchResults: Observable<string[]>;
+	showSearchResults: Observable<(Movie|Series)[]>;
 
 	constructor(private movieService: MovieService ) { 
 		this.search = new FormControl();
